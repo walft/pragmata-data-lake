@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pragmata · Data Lake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #0f1117;
+      --surface:   #181c25;
+      --border:    #272c3a;
+      --accent:    #4f7cff;
+      --accent2:   #00d4a0;
+      --text:      #e2e6f0;
+      --muted:     #6b7280;
+      --danger:    #ff6b6b;
+      --mono:      'IBM Plex Mono', monospace;
+      --sans:      'Inter', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--sans);
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    /* ── HEADER ── */
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 28px 40px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: var(--surface);
+    }
+
+    .logo-mark {
+      width: 40px; height: 40px;
+      background: var(--accent);
+      border-radius: 8px;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono);
+      font-weight: 600;
+      font-size: 18px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-name {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: var(--text);
+    }
+
+    .logo-sub {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--accent2);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .header-badge {
+      margin-left: auto;
+      background: rgba(79,124,255,0.12);
+      border: 1px solid rgba(79,124,255,0.3);
+      color: var(--accent);
+      font-family: var(--mono);
+      font-size: 11px;
+      padding: 4px 10px;
+      border-radius: 20px;
+    }
+
+    /* ── MAIN ── */
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      margin-bottom: 40px;
+    }
+
+    .intro h1 {
+      font-size: 28px;
+      font-weight: 300;
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+
+    .intro h1 strong {
+      font-weight: 600;
+      color: var(--accent);
+    }
+
+    .intro p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* ── HOW TO USE ── */
+    .how-to {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .how-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+
+    .how-card-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 8px;
+    }
+
+    .how-card p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .how-card p b {
+      color: var(--text);
+      font-weight: 500;
+    }
+
+    /* ── TOOLBAR ── */
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+      flex-wrap: wrap;
+    }
+
+    .toolbar-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      flex: 1;
+    }
+
+    .filter-btn {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 12px;
+      padding: 5px 14px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: all 0.15s;
+      font-family: var(--sans);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(79,124,255,0.08);
+    }
+
+    /* ── STATUS BAR ── */
+    #status-bar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 10px 16px;
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-dot {
+      width: 7px; height: 7px;
+      border-radius: 50%;
+      background: var(--muted);
+      flex-shrink: 0;
+      transition: background 0.3s;
+    }
+
+    .status-dot.loading { background: var(--accent); animation: pulse 1s infinite; }
+    .status-dot.ok      { background: var(--accent2); }
+    .status-dot.error   { background: var(--danger); }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    /* ── FILE LIST ── */
+    #file-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .file-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 16px 20px;
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.15s;
+    }
+
+    .file-card:hover { border-color: rgba(79,124,255,0.4); }
+
+    .file-icon {
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .file-info {
+      min-width: 0;
+    }
+
+    .file-name {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 4px;
+    }
+
+    .file-url-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .file-url {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 520px;
+    }
+
+    .file-actions {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      font-family: var(--sans);
+      font-weight: 500;
+      padding: 7px 14px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: opacity 0.15s, transform 0.1s;
+      white-space: nowrap;
+    }
+
+    .btn:hover { opacity: 0.85; }
+    .btn:active { transform: scale(0.97); }
+
+    .btn-copy {
+      background: rgba(79,124,255,0.15);
+      border: 1px solid rgba(79,124,255,0.35);
+      color: var(--accent);
+    }
+
+    .btn-copy.copied {
+      background: rgba(0,212,160,0.15);
+      border-color: rgba(0,212,160,0.35);
+      color: var(--accent2);
+    }
+
+    .btn-download {
+      background: rgba(0,212,160,0.1);
+      border: 1px solid rgba(0,212,160,0.3);
+      color: var(--accent2);
+    }
+
+    /* ── POWER BI TIP ── */
+    .tip-box {
+      margin-top: 48px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 10px 10px 0;
+      padding: 20px 24px;
+    }
+
+    .tip-box-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 10px;
+    }
+
+    .tip-box h3 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .tip-box ol {
+      padding-left: 18px;
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .tip-box ol li b { color: var(--text); }
+
+    .tip-box code {
+      font-family: var(--mono);
+      background: rgba(79,124,255,0.1);
+      color: var(--accent);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    /* ── COMBINE TIP ── */
+    .combine-box {
+      margin-top: 16px;
+      background: rgba(0,212,160,0.05);
+      border: 1px solid rgba(0,212,160,0.2);
+      border-radius: 10px;
+      padding: 20px 24px;
+    }
+
+    .combine-box-label {
+      font-family: var(--mono);
+      font-size: 10px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent2);
+      margin-bottom: 10px;
+    }
+
+    .combine-box h3 {
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 8px;
+    }
+
+    .combine-box p {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .combine-box code {
+      font-family: var(--mono);
+      background: rgba(0,212,160,0.1);
+      color: var(--accent2);
+      padding: 1px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 32px;
+      font-size: 12px;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      font-family: var(--mono);
+    }
+
+    /* ── EMPTY / ERROR ── */
+    .message-card {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 640px) {
+      header { padding: 20px; }
+      .how-to { grid-template-columns: 1fr; }
+      .file-card { grid-template-columns: auto 1fr; }
+      .file-actions { grid-column: 1 / -1; }
+      .file-url { max-width: 200px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-mark">Pg</div>
+  <div class="logo-text">
+    <span class="logo-name">Pragmata</span>
+    <span class="logo-sub">Data Lake · Uso em Aula</span>
+  </div>
+  <span class="header-badge">público · sem login</span>
+</header>
+
+<main>
+  <div class="intro">
+    <h1>Repositório de dados<br><strong>prontos para o Power BI</strong></h1>
+    <p>Arquivos públicos da empresa fictícia Pragmata. Copie a URL e cole direto no Power Query — sem cadastro, sem senha.</p>
+  </div>
+
+  <div class="how-to">
+    <div class="how-card">
+      <div class="how-card-label">🔗 Conectar via URL (recomendado)</div>
+      <p>No Power BI, vá em <b>Obter Dados → Web</b> e cole a URL Raw do arquivo. Dados sempre atualizados.</p>
+    </div>
+    <div class="how-card">
+      <div class="how-card-label">⬇️ Baixar e importar</div>
+      <p>Clique em <b>Download</b> para salvar o arquivo localmente e importar normalmente pelo Power BI ou Excel.</p>
+    </div>
+  </div>
+
+  <div class="toolbar">
+    <span class="toolbar-label" id="file-count">Carregando arquivos…</span>
+    <button class="filter-btn active" onclick="filterFiles('all', this)">Todos</button>
+    <button class="filter-btn" onclick="filterFiles('csv', this)">CSV</button>
+    <button class="filter-btn" onclick="filterFiles('xlsx', this)">Excel</button>
+  </div>
+
+  <div id="status-bar">
+    <div class="status-dot loading" id="status-dot"></div>
+    <span id="status-text">Buscando arquivos no repositório…</span>
+  </div>
+
+  <div id="file-list"></div>
+
+  <div class="tip-box">
+    <div class="tip-box-label">💡 Como usar no Power BI</div>
+    <h3>Conectar direto pelo Power Query</h3>
+    <ol>
+      <li><b>Clique em "Copiar URL"</b> no arquivo desejado</li>
+      <li>No Power BI Desktop: <b>Página Inicial → Obter Dados → Web</b></li>
+      <li>Cole a URL e clique <b>OK</b></li>
+      <li>O Power Query abre o arquivo automaticamente — escolha <code>CSV</code> como delimitador se necessário</li>
+    </ol>
+  </div>
+
+  <div class="combine-box">
+    <div class="combine-box-label">⚡ Exercício avançado — Combinar todos os meses</div>
+    <h3>Pasta Web no Power Query</h3>
+    <p>
+      Para combinar todos os arquivos de uma vez, use <b>Obter Dados → Pasta</b> apontando para o repositório.
+      No Power Query avançado, também é possível combinar via <code>Web.Contents</code> + <code>GitHub API</code>.
+      Peça ao professor para demonstrar essa técnica — é um ótimo exercício de <b>Append Queries</b>.
+    </p>
+  </div>
+</main>
+
+<footer>
+  pragmata-data-lake · github.com/walft/pragmata-data-lake · uso educacional
+</footer>
+
+<script>
+  const REPO   = 'walft/pragmata-data-lake';
+  const BRANCH = 'main';
+  const API    = `https://api.github.com/repos/${REPO}/contents`;
+  const RAW    = `https://raw.githubusercontent.com/${REPO}/${BRANCH}`;
+
+  const EXT_ICON = { csv: '📄', xlsx: '📊', xls: '📊', json: '📋', parquet: '🗃️' };
+  const SKIP     = ['README.md', 'index.html', '.gitignore'];
+
+  let allFiles = [];
+
+  const dot      = document.getElementById('status-dot');
+  const statusTx = document.getElementById('status-text');
+  const fileList = document.getElementById('file-list');
+  const fileCount= document.getElementById('file-count');
+
+  function setStatus(state, msg) {
+    dot.className = 'status-dot ' + state;
+    statusTx.textContent = msg;
+  }
+
+  function ext(name) {
+    return name.split('.').pop().toLowerCase();
+  }
+
+  function renderFiles(files) {
+    fileList.innerHTML = '';
+    if (!files.length) {
+      fileList.innerHTML = '<div class="message-card">Nenhum arquivo encontrado para esse filtro.</div>';
+      return;
+    }
+
+    files.forEach(f => {
+      const rawUrl  = `${RAW}/${f.name}`;
+      const dlUrl   = f.download_url || rawUrl;
+      const icon    = EXT_ICON[ext(f.name)] || '📁';
+
+      const card = document.createElement('div');
+      card.className = 'file-card';
+      card.dataset.ext = ext(f.name);
+      card.innerHTML = `
+        <div class="file-icon">${icon}</div>
+        <div class="file-info">
+          <div class="file-name">${f.name}</div>
+          <div class="file-url-row">
+            <span class="file-url">${rawUrl}</span>
+          </div>
+        </div>
+        <div class="file-actions">
+          <button class="btn btn-copy" onclick="copyUrl(this, '${rawUrl}')">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg>
+            Copiar URL
+          </button>
+          <a class="btn btn-download" href="${dlUrl}" download="${f.name}">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download
+          </a>
+        </div>`;
+      fileList.appendChild(card);
+    });
+  }
+
+  function filterFiles(type, btn) {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filtered = type === 'all' ? allFiles : allFiles.filter(f => ext(f.name) === type);
+    renderFiles(filtered);
+    fileCount.textContent = `${filtered.length} arquivo${filtered.length !== 1 ? 's' : ''} disponíve${filtered.length !== 1 ? 'is' : 'l'}`;
+  }
+
+  async function copyUrl(btn, url) {
+    try {
+      await navigator.clipboard.writeText(url);
+      btn.classList.add('copied');
+      btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg> Copiada!`;
+      setTimeout(() => {
+        btn.classList.remove('copied');
+        btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/></svg> Copiar URL`;
+      }, 2000);
+    } catch {
+      prompt('Copie a URL abaixo:', url);
+    }
+  }
+
+  async function loadFiles() {
+    setStatus('loading', 'Buscando arquivos no repositório…');
+    try {
+      const res  = await fetch(API);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+
+      allFiles = data.filter(f =>
+        f.type === 'file' &&
+        !SKIP.includes(f.name) &&
+        ['csv','xlsx','xls','json','parquet'].includes(ext(f.name))
+      );
+
+      if (!allFiles.length) {
+        setStatus('error', 'Nenhum arquivo de dados encontrado no repositório.');
+        fileList.innerHTML = '<div class="message-card">O repositório ainda não possui arquivos CSV ou Excel.</div>';
+        return;
+      }
+
+      fileCount.textContent = `${allFiles.length} arquivo${allFiles.length !== 1 ? 's' : ''} disponíve${allFiles.length !== 1 ? 'is' : 'l'}`;
+      setStatus('ok', `${allFiles.length} arquivos carregados com sucesso · github.com/${REPO}`);
+      renderFiles(allFiles);
+    } catch (err) {
+      setStatus('error', `Erro ao carregar: ${err.message}`);
+      fileList.innerHTML = '<div class="message-card">Não foi possível carregar os arquivos. Verifique sua conexão ou tente novamente.</div>';
+    }
+  }
+
+  loadFiles();
+</script>
+
+</body>
+</html>
