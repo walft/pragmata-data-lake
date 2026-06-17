@@ -53,8 +53,48 @@
     .how-card p b { color: var(--text); font-weight: 500; }
 
     /* ── TOOLBAR ── */
-    .toolbar { display: flex; align-items: center; margin-bottom: 14px; }
-    .toolbar-label { font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+    .toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 14px;
+      flex-wrap: wrap;
+    }
+    .toolbar-label {
+      font-family: var(--mono); font-size: 11px;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--muted); margin-right: auto;
+    }
+
+    /* Botões de filtro */
+    .filter-btn {
+      font-family: var(--sans); font-size: 12px; font-weight: 500;
+      padding: 5px 14px; border-radius: 20px; cursor: pointer;
+      border: 1px solid var(--border);
+      background: transparent; color: var(--muted);
+      transition: all .15s;
+      display: inline-flex; align-items: center; gap: 5px;
+    }
+    .filter-btn:hover { border-color: var(--btn-color, var(--accent2)); color: var(--btn-color, var(--accent2)); }
+    .filter-btn.active {
+      border-color: var(--btn-color, var(--accent2));
+      color: var(--btn-color, var(--accent2));
+      background: color-mix(in srgb, var(--btn-color, var(--accent2)) 12%, transparent);
+    }
+
+    /* Cores dos filtros por tipo */
+    .filter-btn[data-filter="all"]    { --btn-color: var(--accent2); }
+    .filter-btn[data-filter="csv"]    { --btn-color: #39a8e0; }
+    .filter-btn[data-filter="xlsx"]   { --btn-color: #48bb78; }
+    .filter-btn[data-filter="json"]   { --btn-color: #f6ad55; }
+    .filter-btn[data-filter="parquet"]{ --btn-color: #b794f4; }
+    .filter-btn[data-filter="accdb"]  { --btn-color: #e91e8c; }
+
+    .filter-count {
+      font-family: var(--mono); font-size: 10px;
+      background: rgba(255,255,255,.08); border-radius: 10px;
+      padding: 1px 6px; min-width: 18px; text-align: center;
+    }
 
     /* ── STATUS BAR ── */
     #status-bar {
@@ -80,12 +120,13 @@
       grid-template-columns: auto 1fr auto;
       align-items: center;
       gap: 16px;
-      transition: border-color .2s, background .2s;
+      transition: border-color .2s, background .2s, opacity .2s;
       position: relative;
       overflow: hidden;
     }
+    .file-card.hidden { display: none; }
 
-    /* Faixa colorida lateral automática por tipo */
+    /* Faixa lateral colorida automática */
     .file-card::before {
       content: '';
       position: absolute;
@@ -98,14 +139,14 @@
       background: var(--tbg, rgba(57,168,224,.04));
     }
 
-    /* Variantes de tipo — definidas via CSS vars; novas extensões = nova linha aqui */
-    .file-card[data-type="csv"]    { --tc:#39a8e0; --tbg:rgba(57,168,224,.05); }
+    /* Variantes de tipo */
+    .file-card[data-type="csv"]     { --tc:#39a8e0; --tbg:rgba(57,168,224,.05); }
     .file-card[data-type="xlsx"],
-    .file-card[data-type="xls"]   { --tc:#48bb78; --tbg:rgba(72,187,120,.05); }
-    .file-card[data-type="json"]   { --tc:#f6ad55; --tbg:rgba(246,173,85,.05); }
-    .file-card[data-type="parquet"]{ --tc:#b794f4; --tbg:rgba(183,148,244,.05); }
+    .file-card[data-type="xls"]     { --tc:#48bb78; --tbg:rgba(72,187,120,.05); }
+    .file-card[data-type="json"]    { --tc:#f6ad55; --tbg:rgba(246,173,85,.05); }
+    .file-card[data-type="parquet"] { --tc:#b794f4; --tbg:rgba(183,148,244,.05); }
 
-    /* Access — magenta, fundo e borda já visíveis em repouso */
+    /* Access — magenta, fundo e borda visíveis em repouso */
     .file-card[data-type="accdb"],
     .file-card[data-type="mdb"] {
       --tc:  #e91e8c;
@@ -139,13 +180,11 @@
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
       margin-bottom: 4px;
     }
-
     .file-url {
       font-family: var(--mono); font-size: 11px; color: var(--muted);
       white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
       max-width: 520px; display: block;
     }
-
     .file-tag {
       font-family: var(--mono); font-size: 11px;
       color: #e91e8c; display: block; margin-top: 3px; opacity: .9;
@@ -178,12 +217,19 @@
       border: 1px solid rgba(57,168,224,.3);
       color: var(--accent2);
     }
-    /* Botão download magenta para Access */
     .btn-download-access {
       background: rgba(233,30,140,.12);
       border: 1px solid rgba(233,30,140,.45);
       color: #e91e8c;
     }
+
+    /* Mensagem de lista vazia filtrada */
+    .empty-filter {
+      text-align: center; padding: 40px 20px;
+      color: var(--muted); font-size: 14px;
+      display: none;
+    }
+    .empty-filter.visible { display: block; }
 
     /* ── TIP BOX ── */
     .tip-box {
@@ -222,6 +268,7 @@
       .file-card { grid-template-columns: auto 1fr; }
       .file-actions { grid-column: 1 / -1; }
       .file-url { max-width: 200px; }
+      .toolbar { gap: 6px; }
     }
   </style>
 </head>
@@ -248,7 +295,8 @@
   </div>
 
   <div class="toolbar">
-    <span class="toolbar-label" id="file-count">Carregando arquivos…</span>
+    <span class="toolbar-label" id="file-count">Carregando…</span>
+    <div id="filter-buttons"></div>
   </div>
 
   <div id="status-bar">
@@ -257,6 +305,7 @@
   </div>
 
   <div id="file-list"></div>
+  <div class="empty-filter" id="empty-filter">Nenhum arquivo deste tipo no repositório.</div>
 
   <div class="tip-box">
     <div class="tip-box-label">💡 Como usar no Power BI</div>
@@ -291,26 +340,40 @@
   const RAW    = 'https://raw.githubusercontent.com/' + REPO + '/' + BRANCH;
 
   // ─────────────────────────────────────────────────────────────────
-  // CONFIGURAÇÃO DE TIPOS — para adicionar suporte a uma nova extensão
-  // basta inserir uma linha aqui. O resto é automático.
+  // CONFIGURAÇÃO DE TIPOS
+  // Para suportar nova extensão: adicione uma entrada aqui.
+  // order: prioridade no grupo (menor = primeiro dentro do tipo)
+  // group: agrupa tipos irmãos para ordenação (ex: xls e xlsx juntos)
   // ─────────────────────────────────────────────────────────────────
   const FILE_TYPES = {
-    csv:     { icon: '📄', label: 'CSV',     dlOnly: false },
-    xlsx:    { icon: '📊', label: 'Excel',   dlOnly: false },
-    xls:     { icon: '📊', label: 'Excel',   dlOnly: false },
-    json:    { icon: '📋', label: 'JSON',    dlOnly: false },
-    parquet: { icon: '🗃️', label: 'Parquet', dlOnly: false },
-    accdb:   { icon: '🗄️', label: 'Access',  dlOnly: true  },
-    mdb:     { icon: '🗄️', label: 'Access',  dlOnly: true  },
+    csv:     { icon: '📄', label: 'CSV',     dlOnly: false, groupOrder: 0 },
+    xlsx:    { icon: '📊', label: 'Excel',   dlOnly: false, groupOrder: 1 },
+    xls:     { icon: '📊', label: 'Excel',   dlOnly: false, groupOrder: 1 },
+    json:    { icon: '📋', label: 'JSON',    dlOnly: false, groupOrder: 2 },
+    parquet: { icon: '🗃️', label: 'Parquet', dlOnly: false, groupOrder: 3 },
+    accdb:   { icon: '🗄️', label: 'Access',  dlOnly: true,  groupOrder: 4 },
+    mdb:     { icon: '🗄️', label: 'Access',  dlOnly: true,  groupOrder: 4 },
   };
 
-  const SUPPORTED = Object.keys(FILE_TYPES);
-  const SKIP      = ['README.md', 'index.html', '.gitignore'];
+  // Ordem dos meses em português para ordenar arquivos com nomes de meses
+  const MONTH_ORDER = {
+    janeiro:1, fevereiro:2, marco:3, março:3, abril:4, maio:5, junho:6,
+    julho:7, agosto:8, setembro:9, outubro:10, novembro:11, dezembro:12
+  };
 
-  const dot       = document.getElementById('status-dot');
-  const statusTx  = document.getElementById('status-text');
-  const fileList  = document.getElementById('file-list');
-  const fileCount = document.getElementById('file-count');
+  const SUPPORTED   = Object.keys(FILE_TYPES);
+  const SKIP        = ['README.md', 'index.html', '.gitignore'];
+  const DEFAULT_TAB = 'csv'; // aba aberta por padrão
+
+  const dot         = document.getElementById('status-dot');
+  const statusTx    = document.getElementById('status-text');
+  const fileList    = document.getElementById('file-list');
+  const fileCount   = document.getElementById('file-count');
+  const filterBtns  = document.getElementById('filter-buttons');
+  const emptyFilter = document.getElementById('empty-filter');
+
+  let allFiles     = [];
+  let activeFilter = DEFAULT_TAB;
 
   function setStatus(state, msg) {
     dot.className = 'status-dot ' + state;
@@ -319,17 +382,98 @@
 
   function ext(name) { return name.split('.').pop().toLowerCase(); }
 
+  // Extrai número de mês a partir do nome do arquivo (ex: Vendas_Janeiro → 1)
+  function monthIndex(name) {
+    var lower = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    for (var m in MONTH_ORDER) {
+      if (lower.indexOf(m) !== -1) return MONTH_ORDER[m];
+    }
+    return 99;
+  }
+
+  // Ordena: primeiro por grupo de tipo, depois por mês (se tiver), depois alfabético
+  function sortFiles(files) {
+    return files.slice().sort(function(a, b) {
+      var ta = FILE_TYPES[ext(a.name)] || { groupOrder: 99 };
+      var tb = FILE_TYPES[ext(b.name)] || { groupOrder: 99 };
+      if (ta.groupOrder !== tb.groupOrder) return ta.groupOrder - tb.groupOrder;
+      var ma = monthIndex(a.name), mb = monthIndex(b.name);
+      if (ma !== mb) return ma - mb;
+      return a.name.localeCompare(b.name, 'pt-BR');
+    });
+  }
+
+  function applyFilter(filter) {
+    activeFilter = filter;
+
+    // Atualiza botões
+    document.querySelectorAll('.filter-btn').forEach(function(b) {
+      b.classList.toggle('active', b.dataset.filter === filter);
+    });
+
+    // Mostra/oculta cards
+    var cards   = fileList.querySelectorAll('.file-card');
+    var visible = 0;
+    cards.forEach(function(c) {
+      var match = filter === 'all' || c.dataset.type === filter ||
+                  (filter === 'xlsx' && c.dataset.type === 'xls') ||
+                  (filter === 'accdb' && c.dataset.type === 'mdb');
+      c.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    emptyFilter.classList.toggle('visible', visible === 0);
+
+    // Atualiza contador
+    var total = allFiles.length;
+    if (filter === 'all') {
+      fileCount.textContent = total + ' arquivo' + (total !== 1 ? 's' : '') + ' disponíve' + (total !== 1 ? 'is' : 'l');
+    } else {
+      fileCount.textContent = visible + ' de ' + total + ' arquivo' + (total !== 1 ? 's' : '');
+    }
+  }
+
+  function buildFilterButtons(files) {
+    // Descobre quais tipos existem de fato no repositório
+    var typeCounts = {};
+    files.forEach(function(f) {
+      var e = ext(f.name);
+      // Normaliza mdb→accdb e xls→xlsx para o filtro
+      var filterKey = (e === 'mdb') ? 'accdb' : (e === 'xls') ? 'xlsx' : e;
+      typeCounts[filterKey] = (typeCounts[filterKey] || 0) + 1;
+    });
+
+    // Ordem dos botões: Todos primeiro, depois por groupOrder
+    var typeOrder = Object.keys(FILE_TYPES)
+      .filter(function(k) { return k !== 'mdb' && k !== 'xls'; }) // deduplicar
+      .sort(function(a,b) { return FILE_TYPES[a].groupOrder - FILE_TYPES[b].groupOrder; });
+
+    var html = '<button class="filter-btn' + (activeFilter === 'all' ? ' active' : '') +
+               '" data-filter="all">Todos <span class="filter-count">' + files.length + '</span></button>';
+
+    typeOrder.forEach(function(key) {
+      if (!typeCounts[key]) return; // não existe no repo, não mostra o botão
+      var type = FILE_TYPES[key];
+      html += '<button class="filter-btn' + (activeFilter === key ? ' active' : '') +
+              '" data-filter="' + key + '">' +
+              type.label + ' <span class="filter-count">' + typeCounts[key] + '</span></button>';
+    });
+
+    filterBtns.innerHTML = html;
+
+    filterBtns.addEventListener('click', function(e) {
+      var btn = e.target.closest('.filter-btn');
+      if (btn) applyFilter(btn.dataset.filter);
+    });
+  }
+
   function renderFiles(files) {
     fileList.innerHTML = '';
-    if (!files.length) {
-      fileList.innerHTML = '<div class="message-card">Nenhum arquivo encontrado.</div>';
-      return;
-    }
 
     files.forEach(function(f) {
       var e      = ext(f.name);
       var type   = FILE_TYPES[e] || { icon: '📁', label: e.toUpperCase(), dlOnly: false };
-      var rawUrl = RAW + '/' + f.name;
+      var rawUrl = RAW + '/' + encodeURIComponent(f.name);
       var dlUrl  = f.download_url || rawUrl;
       var card   = document.createElement('div');
 
@@ -365,7 +509,7 @@
       fileList.appendChild(card);
     });
 
-    // Delegated click para todos os botões Copiar URL
+    // Delegated click para Copiar URL
     fileList.addEventListener('click', function(e) {
       var btn = e.target.closest('.btn-copy');
       if (!btn) return;
@@ -384,20 +528,29 @@
       var res  = await fetch(API);
       if (!res.ok) throw new Error('HTTP ' + res.status);
       var data = await res.json();
-      var files = data.filter(function(f) {
+
+      allFiles = data.filter(function(f) {
         return f.type === 'file' && !SKIP.includes(f.name) && SUPPORTED.includes(ext(f.name));
       });
 
-      if (!files.length) {
+      if (!allFiles.length) {
         setStatus('error', 'Nenhum arquivo de dados encontrado no repositório.');
         fileList.innerHTML = '<div class="message-card">O repositório ainda não possui arquivos suportados.</div>';
         return;
       }
 
-      var n = files.length;
-      fileCount.textContent = n + ' arquivo' + (n !== 1 ? 's' : '') + ' disponíve' + (n !== 1 ? 'is' : 'l');
-      setStatus('ok', n + ' arquivos carregados · github.com/' + REPO);
-      renderFiles(files);
+      // Ordena antes de renderizar
+      allFiles = sortFiles(allFiles);
+
+      // Decide qual filtro padrão usar (CSV se existir, senão o primeiro tipo presente)
+      var hasDefault = allFiles.some(function(f) { return ext(f.name) === DEFAULT_TAB; });
+      activeFilter   = hasDefault ? DEFAULT_TAB : ext(allFiles[0].name);
+
+      renderFiles(allFiles);
+      buildFilterButtons(allFiles);
+      applyFilter(activeFilter);
+
+      setStatus('ok', allFiles.length + ' arquivos carregados · github.com/' + REPO);
     } catch(err) {
       setStatus('error', 'Erro ao carregar: ' + err.message);
       fileList.innerHTML = '<div class="message-card">Não foi possível carregar os arquivos. Verifique sua conexão.</div>';
