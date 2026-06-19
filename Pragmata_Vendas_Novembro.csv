@@ -1,186 +1,186 @@
 ID_Transacao;Data;Cliente;Produto_Servico;Categoria;Quantidade;Valor_Unitario;Custo_Unitario;Qtd_Parcelas;Canal_Venda;Status
-PRG-202611-001;09/11/2026;Rede de Farmácias Viva;Suporte Técnico Premium;Serviço;2;400,0;122,69;6;Venda Direta;Pago
-PRG-202611-002;26/11/2026;Rede de Farmácias Viva;Suporte Técnico Premium;Serviço;1;400,0;116,89;12;E-commerce;Pago
-PRG-202611-003;10/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,0;1466,02;1;Parceiros B2B;Pago
-PRG-202611-004;26/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;2;450,0;150,25;3;Parceiros B2B;Pago
-PRG-202611-005;22/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;4;1250,0;437,17;1;Venda Direta;Pendente
-PRG-202611-006;16/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;1;400,0;109,54;2;E-commerce;Pago
-PRG-202611-007;02/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;2;400,0;125,08;12;Venda Direta;Pendente
-PRG-202611-008;27/11/2026;Tech Soluções Globais;Suporte Técnico Premium;Serviço;2;400,0;108,26;12;E-commerce;Pago
-PRG-202611-009;26/11/2026;Meta Metais;PragmaSecurity Gateway;Software;5;890,0;259,92;12;Venda Direta;Pago
-PRG-202611-010;12/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;2;450,0;137,61;3;E-commerce;Pago
-PRG-202611-011;13/11/2026;Nova Era Digital;PragmaSecurity Gateway;Software;2;890,0;250,89;1;Venda Direta;Pago
-PRG-202611-012;24/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;3;890,0;242,37;3;Venda Direta;Pago
-PRG-202611-013;07/11/2026;Global Alimentos S.A.;Suporte Técnico Premium;Serviço;1;400,0;114,27;6;Parceiros B2B;Pago
-PRG-202611-014;03/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;2;3200,0;1525,16;12;E-commerce;Pendente
-PRG-202611-015;27/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,0;1530,5;12;E-commerce;Pago
-PRG-202611-016;25/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,0;129,52;1;E-commerce;Pago
-PRG-202611-017;03/11/2026;Nova Era Digital;PragmaAnalytics Enterprise;Software;2;1250,0;424,01;6;E-commerce;Pago
-PRG-202611-018;01/11/2026;Banco Inova S.A.;PragmaAnalytics Enterprise;Software;3;1250,0;367,44;3;Venda Direta;Pago
-PRG-202611-019;06/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;2;3200,0;1321,2;12;E-commerce;Pago
-PRG-202611-020;24/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;1;400,0;113,64;2;E-commerce;Pago
-PRG-202611-021;07/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;3;890,0;232,8;1;Venda Direta;Pendente
-PRG-202611-022;22/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;1;890,0;263,21;12;Venda Direta;Pendente
-PRG-202611-023;12/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,0;1511,47;12;E-commerce;Pago
-PRG-202611-024;25/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;2;3200,0;1322,19;12;Venda Direta;Pago
-PRG-202611-025;26/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;1;400,0;120,06;6;Parceiros B2B;Pago
-PRG-202611-026;15/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;4;890,0;240,78;1;Venda Direta;Pago
-PRG-202611-027;13/11/2026;Meta Metais;PragmaCloud Pro;Software;3;450,0;145,85;3;Venda Direta;Pago
-PRG-202611-028;08/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;2;400,0;116,78;6;E-commerce;Pago
-PRG-202611-029;23/11/2026;Construtora Horizonte;Consultoria de Processos TI;Serviço;2;3200,0;1338,3;2;Parceiros B2B;Pago
-PRG-202611-030;19/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;3;450,0;159,12;12;E-commerce;Pendente
-PRG-202611-031;07/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;4;1250,0;424,45;2;E-commerce;Pago
-PRG-202611-032;29/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;3;890,0;264,27;3;E-commerce;Pago
-PRG-202611-033;19/11/2026;Indústrias Alfa Ltda;Suporte Técnico Premium;Serviço;1;400,0;124,57;1;Venda Direta;Pago
-PRG-202611-034;16/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;2;400,0;114,23;3;Parceiros B2B;Pago
-PRG-202611-035;26/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1375,29;3;Parceiros B2B;Cancelado
-PRG-202611-036;07/11/2026;Meta Metais;PragmaSecurity Gateway;Software;5;890,0;233,73;3;E-commerce;Pago
-PRG-202611-037;17/11/2026;Global Alimentos S.A.;Suporte Técnico Premium;Serviço;1;400,0;117,15;3;E-commerce;Pago
-PRG-202611-038;05/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;2;3200,0;1436,76;12;E-commerce;Pendente
-PRG-202611-039;03/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;3;1250,0;378,26;3;Parceiros B2B;Pago
-PRG-202611-040;09/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,0;129,3;3;Parceiros B2B;Pago
-PRG-202611-041;15/11/2026;Nova Era Digital;PragmaAnalytics Enterprise;Software;2;1250,0;428,34;2;Parceiros B2B;Pago
-PRG-202611-042;09/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;2;1250,0;391,76;1;Venda Direta;Pendente
-PRG-202611-043;16/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;1;450,0;158,13;12;Venda Direta;Pago
-PRG-202611-044;20/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;4;450,0;144,28;2;Parceiros B2B;Pago
-PRG-202611-045;21/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;5;1250,0;427,08;1;Venda Direta;Pago
-PRG-202611-046;28/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,0;131,4;12;E-commerce;Pago
-PRG-202611-047;05/11/2026;Rede de Farmácias Viva;PragmaAnalytics Enterprise;Software;5;1250,0;407,81;12;E-commerce;Pago
-PRG-202611-048;21/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;2;3200,0;1394,86;2;Venda Direta;Pago
-PRG-202611-049;12/11/2026;Nova Era Digital;Consultoria de Processos TI;Serviço;1;3200,0;1345,0;1;Parceiros B2B;Pago
-PRG-202611-050;28/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;2;3200,0;1391,38;1;Parceiros B2B;Pendente
-PRG-202611-051;25/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1474,44;3;Parceiros B2B;Pago
-PRG-202611-052;01/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;1;3200,0;1375,29;12;E-commerce;Pago
-PRG-202611-053;06/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;1;400,0;114,31;6;Parceiros B2B;Pago
-PRG-202611-054;25/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,0;1441,57;12;E-commerce;Pago
-PRG-202611-055;28/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;2;1250,0;383,17;6;Parceiros B2B;Pago
-PRG-202611-056;23/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;1;400,0;115,7;2;Venda Direta;Cancelado
-PRG-202611-057;01/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;3;450,0;143,08;6;Parceiros B2B;Pago
-PRG-202611-058;03/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;4;450,0;141,52;6;E-commerce;Pago
-PRG-202611-059;16/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;1;400,0;115,93;2;Venda Direta;Pago
-PRG-202611-060;13/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;4;890,0;234,08;3;E-commerce;Pendente
-PRG-202611-061;04/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;2;400,0;113,93;1;Venda Direta;Pago
-PRG-202611-062;25/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;2;890,0;248,64;3;E-commerce;Pago
-PRG-202611-063;24/11/2026;Indústrias Alfa Ltda;PragmaSecurity Gateway;Software;5;890,0;231,11;6;Parceiros B2B;Pago
-PRG-202611-064;12/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;1;1250,0;378,88;6;E-commerce;Pago
-PRG-202611-065;26/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;1;890,0;244,79;2;Venda Direta;Cancelado
-PRG-202611-066;19/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;2;890,0;243,57;1;Venda Direta;Pago
-PRG-202611-067;03/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;1;3200,0;1276,74;2;Parceiros B2B;Pago
-PRG-202611-068;04/11/2026;Tech Soluções Globais;Suporte Técnico Premium;Serviço;1;400,0;115,6;12;Parceiros B2B;Pago
-PRG-202611-069;26/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;1;1250,0;415,14;3;Parceiros B2B;Pago
-PRG-202611-070;29/11/2026;Indústrias Alfa Ltda;Suporte Técnico Premium;Serviço;2;400,0;121,42;12;Parceiros B2B;Pago
-PRG-202611-071;19/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;3;890,0;241,18;6;E-commerce;Pendente
-PRG-202611-072;20/11/2026;Rede de Farmácias Viva;PragmaAnalytics Enterprise;Software;1;1250,0;402,49;6;E-commerce;Pago
-PRG-202611-073;18/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;1;400,0;126,62;12;E-commerce;Pago
-PRG-202611-074;29/11/2026;Indústrias Alfa Ltda;PragmaSecurity Gateway;Software;3;890,0;263,8;2;E-commerce;Pago
-PRG-202611-075;22/11/2026;Rede de Farmácias Viva;Suporte Técnico Premium;Serviço;1;400,0;120,58;6;Parceiros B2B;Pago
-PRG-202611-076;10/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,0;110,65;12;Parceiros B2B;Pago
-PRG-202611-077;27/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;1;1250,0;376,17;6;Venda Direta;Pago
-PRG-202611-078;19/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;2;400,0;109,18;2;Parceiros B2B;Pago
-PRG-202611-079;01/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;1;400,0;119,23;1;E-commerce;Pago
-PRG-202611-080;29/11/2026;Nova Era Digital;Consultoria de Processos TI;Serviço;1;3200,0;1490,62;3;Parceiros B2B;Pago
-PRG-202611-081;03/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;2;450,0;163,82;1;Venda Direta;Pago
-PRG-202611-082;18/11/2026;Nova Era Digital;PragmaAnalytics Enterprise;Software;2;1250,0;402,1;2;Parceiros B2B;Pago
-PRG-202611-083;06/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;4;890,0;262,31;12;E-commerce;Pago
-PRG-202611-084;23/11/2026;Nova Era Digital;PragmaCloud Pro;Software;2;450,0;158,77;12;E-commerce;Pago
-PRG-202611-085;22/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;5;890,0;247,15;3;E-commerce;Pago
-PRG-202611-086;11/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,0;127,83;3;Parceiros B2B;Pago
-PRG-202611-087;18/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;2;400,0;116,64;6;E-commerce;Cancelado
-PRG-202611-088;01/11/2026;Indústrias Alfa Ltda;Consultoria de Processos TI;Serviço;1;3200,0;1404,93;3;Venda Direta;Pago
-PRG-202611-089;08/11/2026;Logística Express Brasil;Consultoria de Processos TI;Serviço;1;3200,0;1476,03;3;Parceiros B2B;Pago
-PRG-202611-090;19/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;1;1250,0;363,02;3;Venda Direta;Pago
-PRG-202611-091;12/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;2;1250,0;380,5;3;Venda Direta;Pago
-PRG-202611-092;19/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;3;450,0;158,79;2;E-commerce;Pendente
-PRG-202611-093;23/11/2026;Meta Metais;PragmaCloud Pro;Software;5;450,0;154,27;1;Parceiros B2B;Pago
-PRG-202611-094;13/11/2026;Varejo Total S.A.;PragmaCloud Pro;Software;3;450,0;145,44;6;E-commerce;Pendente
-PRG-202611-095;04/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;1;890,0;256,69;6;Venda Direta;Pago
-PRG-202611-096;02/11/2026;Construtora Horizonte;PragmaSecurity Gateway;Software;5;890,0;232,48;12;Parceiros B2B;Pago
-PRG-202611-097;02/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;1;400,0;113,33;3;E-commerce;Pago
-PRG-202611-098;11/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;1;400,0;121,16;3;Venda Direta;Pago
-PRG-202611-099;14/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;4;1250,0;404,74;6;E-commerce;Pago
-PRG-202611-100;07/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;5;890,0;237,31;1;E-commerce;Pago
-PRG-202611-101;11/11/2026;Meta Metais;PragmaCloud Pro;Software;1;450,0;155,15;6;E-commerce;Pago
-PRG-202611-102;11/11/2026;Construtora Horizonte;PragmaSecurity Gateway;Software;1;890,0;263,48;2;E-commerce;Pago
-PRG-202611-103;26/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;2;890,0;247,02;2;Venda Direta;Pago
-PRG-202611-104;05/11/2026;Varejo Total S.A.;PragmaCloud Pro;Software;1;450,0;142,29;12;Venda Direta;Pendente
-PRG-202611-105;27/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;3;450,0;155,81;1;E-commerce;Pago
-PRG-202611-106;01/11/2026;Construtora Horizonte;PragmaAnalytics Enterprise;Software;5;1250,0;376,95;12;Parceiros B2B;Pago
-PRG-202611-107;18/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;2;890,0;259,75;1;E-commerce;Pago
-PRG-202611-108;22/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;3;450,0;140,11;3;Venda Direta;Pago
-PRG-202611-109;20/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;4;450,0;154,64;1;Venda Direta;Pago
-PRG-202611-110;09/11/2026;Construtora Horizonte;PragmaCloud Pro;Software;1;450,0;143,77;6;Venda Direta;Cancelado
-PRG-202611-111;17/11/2026;Varejo Total S.A.;Consultoria de Processos TI;Serviço;2;3200,0;1502,7;12;Venda Direta;Pago
-PRG-202611-112;17/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;1;890,0;226,99;12;E-commerce;Pago
-PRG-202611-113;13/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;3;450,0;155,53;3;Parceiros B2B;Pago
-PRG-202611-114;17/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;3;450,0;161,36;1;Parceiros B2B;Pendente
-PRG-202611-115;08/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;2;3200,0;1443,94;1;Parceiros B2B;Pago
-PRG-202611-116;22/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;4;1250,0;379,23;2;E-commerce;Cancelado
-PRG-202611-117;30/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,0;1411,83;2;Parceiros B2B;Pago
-PRG-202611-118;18/11/2026;Logística Express Brasil;PragmaAnalytics Enterprise;Software;3;1250,0;415,08;12;Venda Direta;Pago
-PRG-202611-119;30/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;2;890,0;240,87;12;Parceiros B2B;Pendente
-PRG-202611-120;04/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;1;3200,0;1463,58;3;E-commerce;Cancelado
-PRG-202611-121;10/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1478,15;1;Venda Direta;Pago
-PRG-202611-122;25/11/2026;Meta Metais;PragmaSecurity Gateway;Software;3;890,0;255,28;12;Venda Direta;Pago
-PRG-202611-123;08/11/2026;Indústrias Alfa Ltda;Consultoria de Processos TI;Serviço;1;3200,0;1452,68;6;Venda Direta;Pago
-PRG-202611-124;20/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1498,6;6;E-commerce;Pago
-PRG-202611-125;07/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;4;450,0;157,94;1;E-commerce;Cancelado
-PRG-202611-126;08/11/2026;Logística Express Brasil;PragmaAnalytics Enterprise;Software;1;1250,0;374,17;6;Parceiros B2B;Pago
-PRG-202611-127;11/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;4;1250,0;392,39;1;Parceiros B2B;Pago
-PRG-202611-128;13/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;1;400,0;120,5;6;E-commerce;Pendente
-PRG-202611-129;02/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;5;890,0;244,78;1;Parceiros B2B;Pago
-PRG-202611-130;25/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;3;1250,0;395,16;3;E-commerce;Pago
-PRG-202611-131;14/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;1;890,0;259,5;2;E-commerce;Pendente
-PRG-202611-132;15/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;1;890,0;233,99;12;Parceiros B2B;Pago
-PRG-202611-133;13/11/2026;Nova Era Digital;Consultoria de Processos TI;Serviço;2;3200,0;1266,98;6;Parceiros B2B;Pendente
-PRG-202611-134;29/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;1;400,0;114,0;2;Parceiros B2B;Pago
-PRG-202611-135;03/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;2;400,0;110,05;6;Parceiros B2B;Pago
-PRG-202611-136;17/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;4;1250,0;404,03;1;Venda Direta;Pendente
-PRG-202611-137;19/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;2;1250,0;374,31;1;E-commerce;Pago
-PRG-202611-138;24/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1292,92;2;Venda Direta;Pago
-PRG-202611-139;25/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;4;450,0;149,93;6;Parceiros B2B;Pago
-PRG-202611-140;20/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;2;1250,0;407,11;6;E-commerce;Pago
-PRG-202611-141;03/11/2026;Meta Metais;PragmaSecurity Gateway;Software;1;890,0;237,24;12;E-commerce;Pago
-PRG-202611-142;18/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;2;450,0;139,45;3;Venda Direta;Pago
-PRG-202611-143;02/11/2026;Meta Metais;PragmaSecurity Gateway;Software;3;890,0;241,56;1;Venda Direta;Pago
-PRG-202611-144;06/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;1;3200,0;1530,56;12;E-commerce;Pendente
-PRG-202611-145;03/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;2;3200,0;1511,31;1;E-commerce;Pendente
-PRG-202611-146;03/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;1;400,0;110,93;3;E-commerce;Pago
-PRG-202611-147;17/11/2026;Logística Express Brasil;PragmaAnalytics Enterprise;Software;5;1250,0;364,65;12;Parceiros B2B;Cancelado
-PRG-202611-148;17/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;2;400,0;118,25;3;E-commerce;Pago
-PRG-202611-149;20/11/2026;Construtora Horizonte;PragmaAnalytics Enterprise;Software;5;1250,0;405,01;12;Parceiros B2B;Pago
-PRG-202611-150;16/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;2;890,0;260,43;2;Venda Direta;Pago
-PRG-202611-151;15/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;5;1250,0;439,92;6;Venda Direta;Pago
-PRG-202611-152;18/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;2;450,0;155,7;3;Venda Direta;Pago
-PRG-202611-153;17/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;1;3200,0;1291,87;3;E-commerce;Pago
-PRG-202611-154;19/11/2026;Meta Metais;PragmaCloud Pro;Software;2;450,0;140,82;3;Parceiros B2B;Pago
-PRG-202611-155;16/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;4;1250,0;372,43;6;Parceiros B2B;Pendente
-PRG-202611-156;15/11/2026;Nova Era Digital;PragmaCloud Pro;Software;5;450,0;143,98;3;Parceiros B2B;Pago
-PRG-202611-157;07/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,0;1278,54;2;E-commerce;Pendente
-PRG-202611-158;11/11/2026;Nova Era Digital;PragmaSecurity Gateway;Software;2;890,0;253,55;6;Venda Direta;Pago
-PRG-202611-159;28/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1336,02;1;E-commerce;Pendente
-PRG-202611-160;12/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,0;1407,03;2;Venda Direta;Pago
-PRG-202611-161;02/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;4;450,0;150,18;6;Parceiros B2B;Pago
-PRG-202611-162;11/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;3;890,0;263,78;2;Venda Direta;Pendente
-PRG-202611-163;17/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;1;1250,0;396,75;12;Venda Direta;Pago
-PRG-202611-164;30/11/2026;Indústrias Alfa Ltda;PragmaSecurity Gateway;Software;1;890,0;241,66;1;Venda Direta;Pago
-PRG-202611-165;22/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;5;450,0;157,75;2;E-commerce;Pago
-PRG-202611-166;10/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;3;890,0;263,64;1;E-commerce;Pago
-PRG-202611-167;09/11/2026;Varejo Total S.A.;PragmaCloud Pro;Software;5;450,0;151,79;1;Venda Direta;Pago
-PRG-202611-168;18/11/2026;Construtora Horizonte;Consultoria de Processos TI;Serviço;1;3200,0;1524,12;3;Parceiros B2B;Pago
-PRG-202611-169;03/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;3;890,0;252,03;1;Venda Direta;Pago
-PRG-202611-170;29/11/2026;Indústrias Alfa Ltda;PragmaCloud Pro;Software;4;450,0;136,61;6;E-commerce;Pago
-PRG-202611-171;20/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,0;115,5;2;Parceiros B2B;Pago
-PRG-202611-172;26/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;4;450,0;152,03;1;Parceiros B2B;Pago
-PRG-202611-173;15/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;2;400,0;113,56;2;Venda Direta;Pendente
-PRG-202611-174;20/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;2;3200,0;1311,34;3;E-commerce;Pago
-PRG-202611-175;01/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;1;400,0;116,43;6;Venda Direta;Pago
-PRG-202611-176;12/11/2026;Meta Metais;PragmaSecurity Gateway;Software;2;890,0;250,4;6;Parceiros B2B;Pago
-PRG-202611-177;11/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;3;450,0;150,98;6;Parceiros B2B;Pago
-PRG-202611-178;20/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;2;890,0;273,69;6;Venda Direta;Pago
-PRG-202611-179;27/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,0;121,61;3;Parceiros B2B;Pago
-PRG-202611-180;06/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;4;890,0;230,72;12;E-commerce;Pago
-PRG-202611-181;04/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;3;1250,0;436,47;1;Parceiros B2B;Pago
-PRG-202611-182;27/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,0;119,86;1;Venda Direta;Pago
-PRG-202611-183;05/11/2026;Meta Metais;PragmaCloud Pro;Software;2;450,0;154,83;6;Parceiros B2B;Pago
-PRG-202611-184;20/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;1;400,0;112,94;3;E-commerce;Pago
-PRG-202611-185;30/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;2;400,0;131,77;12;Venda Direta;Pago
+PRG-202611-001;09/11/2026;Rede de Farmácias Viva;Suporte Técnico Premium;Serviço;2;400,00;122,69;6;Venda Direta;Pago
+PRG-202611-002;26/11/2026;Rede de Farmácias Viva;Suporte Técnico Premium;Serviço;1;400,00;116,89;12;E-commerce;Pago
+PRG-202611-003;10/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,00;1466,02;1;Parceiros B2B;Pago
+PRG-202611-004;26/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;2;450,00;150,25;3;Parceiros B2B;Pago
+PRG-202611-005;22/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;4;1250,00;437,17;1;Venda Direta;Pendente
+PRG-202611-006;16/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;1;400,00;109,54;2;E-commerce;Pago
+PRG-202611-007;02/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;2;400,00;125,08;12;Venda Direta;Pendente
+PRG-202611-008;27/11/2026;Tech Soluções Globais;Suporte Técnico Premium;Serviço;2;400,00;108,26;12;E-commerce;Pago
+PRG-202611-009;26/11/2026;Meta Metais;PragmaSecurity Gateway;Software;5;890,00;259,92;12;Venda Direta;Pago
+PRG-202611-010;12/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;2;450,00;137,61;3;E-commerce;Pago
+PRG-202611-011;13/11/2026;Nova Era Digital;PragmaSecurity Gateway;Software;2;890,00;250,89;1;Venda Direta;Pago
+PRG-202611-012;24/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;3;890,00;242,37;3;Venda Direta;Pago
+PRG-202611-013;07/11/2026;Global Alimentos S.A.;Suporte Técnico Premium;Serviço;1;400,00;114,27;6;Parceiros B2B;Pago
+PRG-202611-014;03/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;2;3200,00;1525,16;12;E-commerce;Pendente
+PRG-202611-015;27/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,00;1530,50;12;E-commerce;Pago
+PRG-202611-016;25/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,00;129,52;1;E-commerce;Pago
+PRG-202611-017;03/11/2026;Nova Era Digital;PragmaAnalytics Enterprise;Software;2;1250,00;424,01;6;E-commerce;Pago
+PRG-202611-018;01/11/2026;Banco Inova S.A.;PragmaAnalytics Enterprise;Software;3;1250,00;367,44;3;Venda Direta;Pago
+PRG-202611-019;06/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;2;3200,00;1321,20;12;E-commerce;Pago
+PRG-202611-020;24/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;1;400,00;113,64;2;E-commerce;Pago
+PRG-202611-021;07/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;3;890,00;232,80;1;Venda Direta;Pendente
+PRG-202611-022;22/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;1;890,00;263,21;12;Venda Direta;Pendente
+PRG-202611-023;12/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,00;1511,47;12;E-commerce;Pago
+PRG-202611-024;25/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;2;3200,00;1322,19;12;Venda Direta;Pago
+PRG-202611-025;26/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;1;400,00;120,06;6;Parceiros B2B;Pago
+PRG-202611-026;15/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;4;890,00;240,78;1;Venda Direta;Pago
+PRG-202611-027;13/11/2026;Meta Metais;PragmaCloud Pro;Software;3;450,00;145,85;3;Venda Direta;Pago
+PRG-202611-028;08/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;2;400,00;116,78;6;E-commerce;Pago
+PRG-202611-029;23/11/2026;Construtora Horizonte;Consultoria de Processos TI;Serviço;2;3200,00;1338,30;2;Parceiros B2B;Pago
+PRG-202611-030;19/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;3;450,00;159,12;12;E-commerce;Pendente
+PRG-202611-031;07/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;4;1250,00;424,45;2;E-commerce;Pago
+PRG-202611-032;29/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;3;890,00;264,27;3;E-commerce;Pago
+PRG-202611-033;19/11/2026;Indústrias Alfa Ltda;Suporte Técnico Premium;Serviço;1;400,00;124,57;1;Venda Direta;Pago
+PRG-202611-034;16/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;2;400,00;114,23;3;Parceiros B2B;Pago
+PRG-202611-035;26/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1375,29;3;Parceiros B2B;Cancelado
+PRG-202611-036;07/11/2026;Meta Metais;PragmaSecurity Gateway;Software;5;890,00;233,73;3;E-commerce;Pago
+PRG-202611-037;17/11/2026;Global Alimentos S.A.;Suporte Técnico Premium;Serviço;1;400,00;117,15;3;E-commerce;Pago
+PRG-202611-038;05/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;2;3200,00;1436,76;12;E-commerce;Pendente
+PRG-202611-039;03/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;3;1250,00;378,26;3;Parceiros B2B;Pago
+PRG-202611-040;09/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,00;129,30;3;Parceiros B2B;Pago
+PRG-202611-041;15/11/2026;Nova Era Digital;PragmaAnalytics Enterprise;Software;2;1250,00;428,34;2;Parceiros B2B;Pago
+PRG-202611-042;09/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;2;1250,00;391,76;1;Venda Direta;Pendente
+PRG-202611-043;16/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;1;450,00;158,13;12;Venda Direta;Pago
+PRG-202611-044;20/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;4;450,00;144,28;2;Parceiros B2B;Pago
+PRG-202611-045;21/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;5;1250,00;427,08;1;Venda Direta;Pago
+PRG-202611-046;28/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,00;131,40;12;E-commerce;Pago
+PRG-202611-047;05/11/2026;Rede de Farmácias Viva;PragmaAnalytics Enterprise;Software;5;1250,00;407,81;12;E-commerce;Pago
+PRG-202611-048;21/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;2;3200,00;1394,86;2;Venda Direta;Pago
+PRG-202611-049;12/11/2026;Nova Era Digital;Consultoria de Processos TI;Serviço;1;3200,00;1345,00;1;Parceiros B2B;Pago
+PRG-202611-050;28/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;2;3200,00;1391,38;1;Parceiros B2B;Pendente
+PRG-202611-051;25/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1474,44;3;Parceiros B2B;Pago
+PRG-202611-052;01/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;1;3200,00;1375,29;12;E-commerce;Pago
+PRG-202611-053;06/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;1;400,00;114,31;6;Parceiros B2B;Pago
+PRG-202611-054;25/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,00;1441,57;12;E-commerce;Pago
+PRG-202611-055;28/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;2;1250,00;383,17;6;Parceiros B2B;Pago
+PRG-202611-056;23/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;1;400,00;115,70;2;Venda Direta;Cancelado
+PRG-202611-057;01/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;3;450,00;143,08;6;Parceiros B2B;Pago
+PRG-202611-058;03/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;4;450,00;141,52;6;E-commerce;Pago
+PRG-202611-059;16/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;1;400,00;115,93;2;Venda Direta;Pago
+PRG-202611-060;13/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;4;890,00;234,08;3;E-commerce;Pendente
+PRG-202611-061;04/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;2;400,00;113,93;1;Venda Direta;Pago
+PRG-202611-062;25/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;2;890,00;248,64;3;E-commerce;Pago
+PRG-202611-063;24/11/2026;Indústrias Alfa Ltda;PragmaSecurity Gateway;Software;5;890,00;231,11;6;Parceiros B2B;Pago
+PRG-202611-064;12/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;1;1250,00;378,88;6;E-commerce;Pago
+PRG-202611-065;26/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;1;890,00;244,79;2;Venda Direta;Cancelado
+PRG-202611-066;19/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;2;890,00;243,57;1;Venda Direta;Pago
+PRG-202611-067;03/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;1;3200,00;1276,74;2;Parceiros B2B;Pago
+PRG-202611-068;04/11/2026;Tech Soluções Globais;Suporte Técnico Premium;Serviço;1;400,00;115,60;12;Parceiros B2B;Pago
+PRG-202611-069;26/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;1;1250,00;415,14;3;Parceiros B2B;Pago
+PRG-202611-070;29/11/2026;Indústrias Alfa Ltda;Suporte Técnico Premium;Serviço;2;400,00;121,42;12;Parceiros B2B;Pago
+PRG-202611-071;19/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;3;890,00;241,18;6;E-commerce;Pendente
+PRG-202611-072;20/11/2026;Rede de Farmácias Viva;PragmaAnalytics Enterprise;Software;1;1250,00;402,49;6;E-commerce;Pago
+PRG-202611-073;18/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;1;400,00;126,62;12;E-commerce;Pago
+PRG-202611-074;29/11/2026;Indústrias Alfa Ltda;PragmaSecurity Gateway;Software;3;890,00;263,80;2;E-commerce;Pago
+PRG-202611-075;22/11/2026;Rede de Farmácias Viva;Suporte Técnico Premium;Serviço;1;400,00;120,58;6;Parceiros B2B;Pago
+PRG-202611-076;10/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,00;110,65;12;Parceiros B2B;Pago
+PRG-202611-077;27/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;1;1250,00;376,17;6;Venda Direta;Pago
+PRG-202611-078;19/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;2;400,00;109,18;2;Parceiros B2B;Pago
+PRG-202611-079;01/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;1;400,00;119,23;1;E-commerce;Pago
+PRG-202611-080;29/11/2026;Nova Era Digital;Consultoria de Processos TI;Serviço;1;3200,00;1490,62;3;Parceiros B2B;Pago
+PRG-202611-081;03/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;2;450,00;163,82;1;Venda Direta;Pago
+PRG-202611-082;18/11/2026;Nova Era Digital;PragmaAnalytics Enterprise;Software;2;1250,00;402,10;2;Parceiros B2B;Pago
+PRG-202611-083;06/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;4;890,00;262,31;12;E-commerce;Pago
+PRG-202611-084;23/11/2026;Nova Era Digital;PragmaCloud Pro;Software;2;450,00;158,77;12;E-commerce;Pago
+PRG-202611-085;22/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;5;890,00;247,15;3;E-commerce;Pago
+PRG-202611-086;11/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;2;400,00;127,83;3;Parceiros B2B;Pago
+PRG-202611-087;18/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;2;400,00;116,64;6;E-commerce;Cancelado
+PRG-202611-088;01/11/2026;Indústrias Alfa Ltda;Consultoria de Processos TI;Serviço;1;3200,00;1404,93;3;Venda Direta;Pago
+PRG-202611-089;08/11/2026;Logística Express Brasil;Consultoria de Processos TI;Serviço;1;3200,00;1476,03;3;Parceiros B2B;Pago
+PRG-202611-090;19/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;1;1250,00;363,02;3;Venda Direta;Pago
+PRG-202611-091;12/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;2;1250,00;380,50;3;Venda Direta;Pago
+PRG-202611-092;19/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;3;450,00;158,79;2;E-commerce;Pendente
+PRG-202611-093;23/11/2026;Meta Metais;PragmaCloud Pro;Software;5;450,00;154,27;1;Parceiros B2B;Pago
+PRG-202611-094;13/11/2026;Varejo Total S.A.;PragmaCloud Pro;Software;3;450,00;145,44;6;E-commerce;Pendente
+PRG-202611-095;04/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;1;890,00;256,69;6;Venda Direta;Pago
+PRG-202611-096;02/11/2026;Construtora Horizonte;PragmaSecurity Gateway;Software;5;890,00;232,48;12;Parceiros B2B;Pago
+PRG-202611-097;02/11/2026;Nova Era Digital;Suporte Técnico Premium;Serviço;1;400,00;113,33;3;E-commerce;Pago
+PRG-202611-098;11/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;1;400,00;121,16;3;Venda Direta;Pago
+PRG-202611-099;14/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;4;1250,00;404,74;6;E-commerce;Pago
+PRG-202611-100;07/11/2026;Rede de Farmácias Viva;PragmaSecurity Gateway;Software;5;890,00;237,31;1;E-commerce;Pago
+PRG-202611-101;11/11/2026;Meta Metais;PragmaCloud Pro;Software;1;450,00;155,15;6;E-commerce;Pago
+PRG-202611-102;11/11/2026;Construtora Horizonte;PragmaSecurity Gateway;Software;1;890,00;263,48;2;E-commerce;Pago
+PRG-202611-103;26/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;2;890,00;247,02;2;Venda Direta;Pago
+PRG-202611-104;05/11/2026;Varejo Total S.A.;PragmaCloud Pro;Software;1;450,00;142,29;12;Venda Direta;Pendente
+PRG-202611-105;27/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;3;450,00;155,81;1;E-commerce;Pago
+PRG-202611-106;01/11/2026;Construtora Horizonte;PragmaAnalytics Enterprise;Software;5;1250,00;376,95;12;Parceiros B2B;Pago
+PRG-202611-107;18/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;2;890,00;259,75;1;E-commerce;Pago
+PRG-202611-108;22/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;3;450,00;140,11;3;Venda Direta;Pago
+PRG-202611-109;20/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;4;450,00;154,64;1;Venda Direta;Pago
+PRG-202611-110;09/11/2026;Construtora Horizonte;PragmaCloud Pro;Software;1;450,00;143,77;6;Venda Direta;Cancelado
+PRG-202611-111;17/11/2026;Varejo Total S.A.;Consultoria de Processos TI;Serviço;2;3200,00;1502,70;12;Venda Direta;Pago
+PRG-202611-112;17/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;1;890,00;226,99;12;E-commerce;Pago
+PRG-202611-113;13/11/2026;Tech Soluções Globais;PragmaCloud Pro;Software;3;450,00;155,53;3;Parceiros B2B;Pago
+PRG-202611-114;17/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;3;450,00;161,36;1;Parceiros B2B;Pendente
+PRG-202611-115;08/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;2;3200,00;1443,94;1;Parceiros B2B;Pago
+PRG-202611-116;22/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;4;1250,00;379,23;2;E-commerce;Cancelado
+PRG-202611-117;30/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,00;1411,83;2;Parceiros B2B;Pago
+PRG-202611-118;18/11/2026;Logística Express Brasil;PragmaAnalytics Enterprise;Software;3;1250,00;415,08;12;Venda Direta;Pago
+PRG-202611-119;30/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;2;890,00;240,87;12;Parceiros B2B;Pendente
+PRG-202611-120;04/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;1;3200,00;1463,58;3;E-commerce;Cancelado
+PRG-202611-121;10/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1478,15;1;Venda Direta;Pago
+PRG-202611-122;25/11/2026;Meta Metais;PragmaSecurity Gateway;Software;3;890,00;255,28;12;Venda Direta;Pago
+PRG-202611-123;08/11/2026;Indústrias Alfa Ltda;Consultoria de Processos TI;Serviço;1;3200,00;1452,68;6;Venda Direta;Pago
+PRG-202611-124;20/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1498,60;6;E-commerce;Pago
+PRG-202611-125;07/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;4;450,00;157,94;1;E-commerce;Cancelado
+PRG-202611-126;08/11/2026;Logística Express Brasil;PragmaAnalytics Enterprise;Software;1;1250,00;374,17;6;Parceiros B2B;Pago
+PRG-202611-127;11/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;4;1250,00;392,39;1;Parceiros B2B;Pago
+PRG-202611-128;13/11/2026;Construtora Horizonte;Suporte Técnico Premium;Serviço;1;400,00;120,50;6;E-commerce;Pendente
+PRG-202611-129;02/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;5;890,00;244,78;1;Parceiros B2B;Pago
+PRG-202611-130;25/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;3;1250,00;395,16;3;E-commerce;Pago
+PRG-202611-131;14/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;1;890,00;259,50;2;E-commerce;Pendente
+PRG-202611-132;15/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;1;890,00;233,99;12;Parceiros B2B;Pago
+PRG-202611-133;13/11/2026;Nova Era Digital;Consultoria de Processos TI;Serviço;2;3200,00;1266,98;6;Parceiros B2B;Pendente
+PRG-202611-134;29/11/2026;Logística Express Brasil;Suporte Técnico Premium;Serviço;1;400,00;114,00;2;Parceiros B2B;Pago
+PRG-202611-135;03/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;2;400,00;110,05;6;Parceiros B2B;Pago
+PRG-202611-136;17/11/2026;Meta Metais;PragmaAnalytics Enterprise;Software;4;1250,00;404,03;1;Venda Direta;Pendente
+PRG-202611-137;19/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;2;1250,00;374,31;1;E-commerce;Pago
+PRG-202611-138;24/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1292,92;2;Venda Direta;Pago
+PRG-202611-139;25/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;4;450,00;149,93;6;Parceiros B2B;Pago
+PRG-202611-140;20/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;2;1250,00;407,11;6;E-commerce;Pago
+PRG-202611-141;03/11/2026;Meta Metais;PragmaSecurity Gateway;Software;1;890,00;237,24;12;E-commerce;Pago
+PRG-202611-142;18/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;2;450,00;139,45;3;Venda Direta;Pago
+PRG-202611-143;02/11/2026;Meta Metais;PragmaSecurity Gateway;Software;3;890,00;241,56;1;Venda Direta;Pago
+PRG-202611-144;06/11/2026;Tech Soluções Globais;Consultoria de Processos TI;Serviço;1;3200,00;1530,56;12;E-commerce;Pendente
+PRG-202611-145;03/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;2;3200,00;1511,31;1;E-commerce;Pendente
+PRG-202611-146;03/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;1;400,00;110,93;3;E-commerce;Pago
+PRG-202611-147;17/11/2026;Logística Express Brasil;PragmaAnalytics Enterprise;Software;5;1250,00;364,65;12;Parceiros B2B;Cancelado
+PRG-202611-148;17/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;2;400,00;118,25;3;E-commerce;Pago
+PRG-202611-149;20/11/2026;Construtora Horizonte;PragmaAnalytics Enterprise;Software;5;1250,00;405,01;12;Parceiros B2B;Pago
+PRG-202611-150;16/11/2026;Tech Soluções Globais;PragmaSecurity Gateway;Software;2;890,00;260,43;2;Venda Direta;Pago
+PRG-202611-151;15/11/2026;Varejo Total S.A.;PragmaAnalytics Enterprise;Software;5;1250,00;439,92;6;Venda Direta;Pago
+PRG-202611-152;18/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;2;450,00;155,70;3;Venda Direta;Pago
+PRG-202611-153;17/11/2026;Rede de Farmácias Viva;Consultoria de Processos TI;Serviço;1;3200,00;1291,87;3;E-commerce;Pago
+PRG-202611-154;19/11/2026;Meta Metais;PragmaCloud Pro;Software;2;450,00;140,82;3;Parceiros B2B;Pago
+PRG-202611-155;16/11/2026;Indústrias Alfa Ltda;PragmaAnalytics Enterprise;Software;4;1250,00;372,43;6;Parceiros B2B;Pendente
+PRG-202611-156;15/11/2026;Nova Era Digital;PragmaCloud Pro;Software;5;450,00;143,98;3;Parceiros B2B;Pago
+PRG-202611-157;07/11/2026;Meta Metais;Consultoria de Processos TI;Serviço;2;3200,00;1278,54;2;E-commerce;Pendente
+PRG-202611-158;11/11/2026;Nova Era Digital;PragmaSecurity Gateway;Software;2;890,00;253,55;6;Venda Direta;Pago
+PRG-202611-159;28/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1336,02;1;E-commerce;Pendente
+PRG-202611-160;12/11/2026;Global Alimentos S.A.;Consultoria de Processos TI;Serviço;1;3200,00;1407,03;2;Venda Direta;Pago
+PRG-202611-161;02/11/2026;Logística Express Brasil;PragmaCloud Pro;Software;4;450,00;150,18;6;Parceiros B2B;Pago
+PRG-202611-162;11/11/2026;Global Alimentos S.A.;PragmaSecurity Gateway;Software;3;890,00;263,78;2;Venda Direta;Pendente
+PRG-202611-163;17/11/2026;Tech Soluções Globais;PragmaAnalytics Enterprise;Software;1;1250,00;396,75;12;Venda Direta;Pago
+PRG-202611-164;30/11/2026;Indústrias Alfa Ltda;PragmaSecurity Gateway;Software;1;890,00;241,66;1;Venda Direta;Pago
+PRG-202611-165;22/11/2026;Banco Inova S.A.;PragmaCloud Pro;Software;5;450,00;157,75;2;E-commerce;Pago
+PRG-202611-166;10/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;3;890,00;263,64;1;E-commerce;Pago
+PRG-202611-167;09/11/2026;Varejo Total S.A.;PragmaCloud Pro;Software;5;450,00;151,79;1;Venda Direta;Pago
+PRG-202611-168;18/11/2026;Construtora Horizonte;Consultoria de Processos TI;Serviço;1;3200,00;1524,12;3;Parceiros B2B;Pago
+PRG-202611-169;03/11/2026;Banco Inova S.A.;PragmaSecurity Gateway;Software;3;890,00;252,03;1;Venda Direta;Pago
+PRG-202611-170;29/11/2026;Indústrias Alfa Ltda;PragmaCloud Pro;Software;4;450,00;136,61;6;E-commerce;Pago
+PRG-202611-171;20/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,00;115,50;2;Parceiros B2B;Pago
+PRG-202611-172;26/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;4;450,00;152,03;1;Parceiros B2B;Pago
+PRG-202611-173;15/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;2;400,00;113,56;2;Venda Direta;Pendente
+PRG-202611-174;20/11/2026;Banco Inova S.A.;Consultoria de Processos TI;Serviço;2;3200,00;1311,34;3;E-commerce;Pago
+PRG-202611-175;01/11/2026;Varejo Total S.A.;Suporte Técnico Premium;Serviço;1;400,00;116,43;6;Venda Direta;Pago
+PRG-202611-176;12/11/2026;Meta Metais;PragmaSecurity Gateway;Software;2;890,00;250,40;6;Parceiros B2B;Pago
+PRG-202611-177;11/11/2026;Rede de Farmácias Viva;PragmaCloud Pro;Software;3;450,00;150,98;6;Parceiros B2B;Pago
+PRG-202611-178;20/11/2026;Logística Express Brasil;PragmaSecurity Gateway;Software;2;890,00;273,69;6;Venda Direta;Pago
+PRG-202611-179;27/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,00;121,61;3;Parceiros B2B;Pago
+PRG-202611-180;06/11/2026;Varejo Total S.A.;PragmaSecurity Gateway;Software;4;890,00;230,72;12;E-commerce;Pago
+PRG-202611-181;04/11/2026;Global Alimentos S.A.;PragmaAnalytics Enterprise;Software;3;1250,00;436,47;1;Parceiros B2B;Pago
+PRG-202611-182;27/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;2;400,00;119,86;1;Venda Direta;Pago
+PRG-202611-183;05/11/2026;Meta Metais;PragmaCloud Pro;Software;2;450,00;154,83;6;Parceiros B2B;Pago
+PRG-202611-184;20/11/2026;Meta Metais;Suporte Técnico Premium;Serviço;1;400,00;112,94;3;E-commerce;Pago
+PRG-202611-185;30/11/2026;Banco Inova S.A.;Suporte Técnico Premium;Serviço;2;400,00;131,77;12;Venda Direta;Pago
