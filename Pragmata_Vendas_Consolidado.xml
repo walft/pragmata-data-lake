@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Vendas_Pragmata>
-  <Ano valor="2022">
+  <Ano_2022>
     <Transacao>
       <ID_Transacao>PRG-202204-001</ID_Transacao>
       <Data>01/04/2022</Data>
@@ -14301,8 +14301,8 @@
       <Canal_Venda>Parceiros B2B</Canal_Venda>
       <Status>Pago</Status>
     </Transacao>
-  </Ano>
-  <Ano valor="2023">
+  </Ano_2022>
+  <Ano_2023>
     <Transacao>
       <ID_Transacao>PRG-202301-001</ID_Transacao>
       <Data>13/01/2023</Data>
@@ -30098,8 +30098,8 @@
       <Canal_Venda>Venda Direta</Canal_Venda>
       <Status>Pago</Status>
     </Transacao>
-  </Ano>
-  <Ano valor="2024">
+  </Ano_2023>
+  <Ano_2024>
     <Transacao>
       <ID_Transacao>PRG-202401-001</ID_Transacao>
       <Data>16/01/2024</Data>
@@ -48885,8 +48885,8 @@
       <Canal_Venda>Venda Direta</Canal_Venda>
       <Status>Pendente</Status>
     </Transacao>
-  </Ano>
-  <Ano valor="2025">
+  </Ano_2024>
+  <Ano_2025>
     <Transacao>
       <ID_Transacao>PRG-202501-001</ID_Transacao>
       <Data>18/01/2025</Data>
@@ -70792,8 +70792,8 @@
       <Canal_Venda>Venda Direta</Canal_Venda>
       <Status>Pago</Status>
     </Transacao>
-  </Ano>
-  <Ano valor="2026">
+  </Ano_2025>
+  <Ano_2026>
     <Transacao>
       <ID_Transacao>PRG-202601-001</ID_Transacao>
       <Data>21/01/2026</Data>
@@ -94259,5 +94259,5 @@
       <Canal_Venda>Parceiros B2B</Canal_Venda>
       <Status>Pago</Status>
     </Transacao>
-  </Ano>
+  </Ano_2026>
 </Vendas_Pragmata>
