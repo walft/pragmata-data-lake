@@ -419,9 +419,9 @@
     <div class="consolidated-icon">📦</div>
     <div class="consolidated-info">
       <div class="consolidated-name">Pragmata_Vendas_Consolidado.xml <span class="type-badge" style="--tc:#38a169;--tbg:rgba(56,161,105,.08)">XML</span></div>
-      <div class="consolidated-desc">Todos os anos · 2022–2026 · 7.250 registros · Navegável por ano no Excel</div>
+      <div class="consolidated-desc">Todos os anos · 2021–2026 · 8.100 registros · Navegável por ano no Excel</div>
     </div>
-    <span class="consolidated-badge">7.250 registros</span>
+    <span class="consolidated-badge">8.100 registros</span>
     <span class="consolidated-chevron">▼</span>
   </div>
   <div class="consolidated-panel" id="panel-xml-cons">
@@ -556,7 +556,7 @@
     xls:     { icon: '📊', label: 'Excel',  dlOnly: false, groupOrder: 1 },
     json:    { icon: '📋', label: 'JSON',   dlOnly: false, groupOrder: 2 },
     xml:     { icon: '📰', label: 'XML',    dlOnly: false, groupOrder: 3 },
-    sql:     { icon: '🗃️', label: 'SQL',    dlOnly: false, groupOrder: 4 },
+    sql:     { icon: '🗃️', label: 'SQL',    dlOnly: true,  groupOrder: 4 },
     accdb:   { icon: '🗄️', label: 'Access', dlOnly: true,  groupOrder: 5 },
     mdb:     { icon: '🗄️', label: 'Access', dlOnly: true,  groupOrder: 5 },
   };
@@ -708,6 +708,9 @@
       return ext(f.name) === 'csv' && !RECORD_COUNTS[f.name];
     });
     if (unmappedCsvs.length > 0) knownTotal += CSV_2026_TOTAL;
+    // SQL 2021 sempre soma (dlOnly, não tem records mapeados)
+    var hasSql = files.some(function(f) { return ext(f.name) === 'sql'; });
+    if (hasSql && !RECORD_COUNTS['Pragmata_Vendas_2021.sql']) { /* já mapeado acima */ }
 
     // Total inclui o SQL de 2021 se existir
     var total = knownTotal;
