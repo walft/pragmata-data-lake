@@ -547,12 +547,23 @@
       </div>
     </div>
 
-    <!-- API Key -->
-    <div class="sb-grid-full">
-      <div class="sb-label">API Key (cabeçalho <code style="font-size:10px;background:none;padding:0">apikey</code> e <code style="font-size:10px;background:none;padding:0">Authorization: Bearer</code>)</div>
-      <div class="sb-field">
-        <code id="sb-key">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code>
-        <button class="sb-copy" onclick="sbCopy('sb-key',this)">copiar</button>
+    <!-- Cabeçalhos separados -->
+    <div class="sb-grid">
+      <div>
+        <div class="sb-label">Cabeçalho 1 — Nome</div>
+        <div class="sb-field"><code id="sb-h1n">apikey</code><button class="sb-copy" onclick="sbCopy('sb-h1n',this)">copiar</button></div>
+      </div>
+      <div>
+        <div class="sb-label">Cabeçalho 1 — Valor</div>
+        <div class="sb-field"><code id="sb-h1v">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code><button class="sb-copy" onclick="sbCopy('sb-h1v',this)">copiar</button></div>
+      </div>
+      <div>
+        <div class="sb-label">Cabeçalho 2 — Nome</div>
+        <div class="sb-field"><code id="sb-h2n">Authorization</code><button class="sb-copy" onclick="sbCopy('sb-h2n',this)">copiar</button></div>
+      </div>
+      <div>
+        <div class="sb-label">Cabeçalho 2 — Valor <span style="color:#e91e8c;font-size:10px">(Bearer + espaço + chave)</span></div>
+        <div class="sb-field" style="border-color:rgba(0,184,148,.35)"><code id="sb-h2v" style="color:#00b894">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code><button class="sb-copy" onclick="sbCopy('sb-h2v',this)">copiar</button></div>
       </div>
     </div>
 
@@ -570,10 +581,7 @@
     </div>
     <div class="sb-step">
       <div class="sb-num">3</div>
-      <div class="sb-step-text">Clique em <b>"Adicionar Cabeçalho"</b> duas vezes e preencha:<br/>
-        Cabeçalho 1 → Nome: <code>apikey</code> · Valor: <i>API Key acima</i><br/>
-        Cabeçalho 2 → Nome: <code>Authorization</code> · Valor: <code>Bearer </code> + <i>API Key acima</i>
-      </div>
+      <div class="sb-step-text">Clique em <b>"Adicionar Cabeçalho"</b> duas vezes e use os campos acima — copie cada nome e valor separadamente. O campo <code>Authorization</code> já vem com <code>Bearer </code> incluído — é só copiar e colar</div>
     </div>
     <div class="sb-step">
       <div class="sb-num">4</div>
