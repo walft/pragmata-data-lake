@@ -531,72 +531,58 @@
     <div class="consolidated-icon">🗄️</div>
     <div class="consolidated-info">
       <div class="consolidated-name">vendas_2021 <span class="type-badge" style="--tc:#b794f4;--tbg:rgba(183,148,244,.08)">PostgreSQL</span></div>
-      <div class="consolidated-desc">Banco de dados online · Supabase · Conectar via Power BI ou Excel</div>
+      <div class="consolidated-desc">Banco de dados online · Supabase · Conectar via URL — sem instalar nada</div>
     </div>
     <span class="consolidated-badge" style="background:rgba(183,148,244,.12);color:#b794f4;border-color:rgba(183,148,244,.3)">850 registros</span>
     <span class="consolidated-chevron">▼</span>
   </div>
   <div class="supabase-panel" id="panel-sb-cons">
 
-    <!-- Host -->
+    <!-- URL da API -->
     <div class="sb-grid-full">
-      <div class="sb-label">Host</div>
+      <div class="sb-label">URL da API (cole no Power BI → Obter Dados → Web)</div>
       <div class="sb-field">
-        <code id="sb-host">db.mjzckujjoqnfljdlkhoi.supabase.co</code>
-        <button class="sb-copy" onclick="sbCopy('sb-host',this)">copiar</button>
+        <code id="sb-url">https://mjzckujjoqnfljdlkhoi.supabase.co/rest/v1/vendas_2021?select=*</code>
+        <button class="sb-copy" onclick="sbCopy('sb-url',this)">copiar</button>
       </div>
     </div>
 
-    <!-- Grid -->
-    <div class="sb-grid">
-      <div>
-        <div class="sb-label">Port</div>
-        <div class="sb-field"><code id="sb-port">5432</code><button class="sb-copy" onclick="sbCopy('sb-port',this)">copiar</button></div>
-      </div>
-      <div>
-        <div class="sb-label">Database</div>
-        <div class="sb-field"><code id="sb-db">postgres</code><button class="sb-copy" onclick="sbCopy('sb-db',this)">copiar</button></div>
-      </div>
-      <div>
-        <div class="sb-label">Usuário</div>
-        <div class="sb-field"><code id="sb-user">postgres</code><button class="sb-copy" onclick="sbCopy('sb-user',this)">copiar</button></div>
-      </div>
-      <div>
-        <div class="sb-label">Tabela</div>
-        <div class="sb-field"><code id="sb-table">vendas_2021</code><button class="sb-copy" onclick="sbCopy('sb-table',this)">copiar</button></div>
-      </div>
-    </div>
-
-    <!-- Senha -->
+    <!-- API Key -->
     <div class="sb-grid-full">
-      <div class="sb-label">Senha (informada pelo professor em aula)</div>
-      <div class="sb-field senha"><code>••••••••••••</code></div>
+      <div class="sb-label">API Key (cabeçalho <code style="font-size:10px;background:none;padding:0">apikey</code> e <code style="font-size:10px;background:none;padding:0">Authorization: Bearer</code>)</div>
+      <div class="sb-field">
+        <code id="sb-key">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code>
+        <button class="sb-copy" onclick="sbCopy('sb-key',this)">copiar</button>
+      </div>
     </div>
 
     <div class="sb-divider"></div>
 
     <!-- Passos -->
-    <div class="sb-steps-title">Como conectar no Power BI</div>
+    <div class="sb-steps-title">Como conectar no Power BI — sem instalar nada</div>
     <div class="sb-step">
       <div class="sb-num">1</div>
-      <div class="sb-step-text"><b>Obter Dados</b> → <b>Banco de Dados PostgreSQL</b></div>
+      <div class="sb-step-text"><b>Obter Dados → Web → Avançado</b></div>
     </div>
     <div class="sb-step">
       <div class="sb-num">2</div>
-      <div class="sb-step-text">Cole o <b>Host</b> e a <b>Port</b> <code>5432</code> nos campos indicados</div>
+      <div class="sb-step-text">Cole a <b>URL da API</b> no campo de URL</div>
     </div>
     <div class="sb-step">
       <div class="sb-num">3</div>
-      <div class="sb-step-text">Usuário: <code>postgres</code> · Senha: fornecida pelo professor</div>
+      <div class="sb-step-text">Clique em <b>"Adicionar Cabeçalho"</b> duas vezes e preencha:<br/>
+        Cabeçalho 1 → Nome: <code>apikey</code> · Valor: <i>API Key acima</i><br/>
+        Cabeçalho 2 → Nome: <code>Authorization</code> · Valor: <code>Bearer </code> + <i>API Key acima</i>
+      </div>
     </div>
     <div class="sb-step">
       <div class="sb-num">4</div>
-      <div class="sb-step-text">Selecione a tabela <code>vendas_2021</code> e clique <b>Carregar</b></div>
+      <div class="sb-step-text">Clique <b>OK</b> → Power Query abre o JSON → clique <b>"Para a Tabela"</b> → expandir colunas → <b>Carregar</b></div>
     </div>
 
     <div class="sb-footer">
       <div class="sb-dot"></div>
-      banco online · Supabase · South America (São Paulo)
+      banco online · Supabase · South America (São Paulo) · sem instalação
     </div>
   </div>
 
