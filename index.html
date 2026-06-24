@@ -538,54 +538,34 @@
   </div>
   <div class="supabase-panel" id="panel-sb-cons">
 
-    <!-- URL da API -->
+    <!-- URL completa com chave embutida -->
     <div class="sb-grid-full">
-      <div class="sb-label">URL da API (cole no Power BI → Obter Dados → Web)</div>
+      <div class="sb-label">URL completa — cole no campo "Da Web" do Excel / Power BI</div>
       <div class="sb-field">
-        <code id="sb-url">https://mjzckujjoqnfljdlkhoi.supabase.co/rest/v1/vendas_2021?select=*</code>
+        <code id="sb-url">https://mjzckujjoqnfljdlkhoi.supabase.co/rest/v1/vendas_2021?select=*&apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code>
         <button class="sb-copy" onclick="sbCopy('sb-url',this)">copiar</button>
-      </div>
-    </div>
-
-    <!-- Cabeçalhos separados -->
-    <div class="sb-grid">
-      <div>
-        <div class="sb-label">Cabeçalho 1 — Nome</div>
-        <div class="sb-field"><code id="sb-h1n">apikey</code><button class="sb-copy" onclick="sbCopy('sb-h1n',this)">copiar</button></div>
-      </div>
-      <div>
-        <div class="sb-label">Cabeçalho 1 — Valor</div>
-        <div class="sb-field"><code id="sb-h1v">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code><button class="sb-copy" onclick="sbCopy('sb-h1v',this)">copiar</button></div>
-      </div>
-      <div>
-        <div class="sb-label">Cabeçalho 2 — Nome</div>
-        <div class="sb-field"><code id="sb-h2n">Authorization</code><button class="sb-copy" onclick="sbCopy('sb-h2n',this)">copiar</button></div>
-      </div>
-      <div>
-        <div class="sb-label">Cabeçalho 2 — Valor <span style="color:#e91e8c;font-size:10px">(Bearer + espaço + chave)</span></div>
-        <div class="sb-field" style="border-color:rgba(0,184,148,.35)"><code id="sb-h2v" style="color:#00b894">Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1qemNrdWpqb3FuZmxqZGxraG9pIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODIxNjkxNDEsImV4cCI6MjA5Nzc0NTE0MX0.KSVDweC_PDDGiPZHgHrpFOgB446PT61o_g_qCSUSU3U</code><button class="sb-copy" onclick="sbCopy('sb-h2v',this)">copiar</button></div>
       </div>
     </div>
 
     <div class="sb-divider"></div>
 
     <!-- Passos -->
-    <div class="sb-steps-title">Como conectar no Power BI — sem instalar nada</div>
+    <div class="sb-steps-title">Como conectar no Excel ou Power BI — sem instalar nada</div>
     <div class="sb-step">
       <div class="sb-num">1</div>
-      <div class="sb-step-text"><b>Obter Dados → Web → Avançado</b></div>
+      <div class="sb-step-text"><b>Dados → Obter Dados → Da Web</b> · Cole a URL acima e clique <b>OK</b></div>
     </div>
     <div class="sb-step">
       <div class="sb-num">2</div>
-      <div class="sb-step-text">Cole a <b>URL da API</b> no campo de URL</div>
+      <div class="sb-step-text">Na tela de autenticação, escolha <b>Anônimo</b> no menu esquerdo e clique <b>Conectar</b></div>
     </div>
     <div class="sb-step">
       <div class="sb-num">3</div>
-      <div class="sb-step-text">Clique em <b>"Adicionar Cabeçalho"</b> duas vezes e use os campos acima — copie cada nome e valor separadamente. O campo <code>Authorization</code> já vem com <code>Bearer </code> incluído — é só copiar e colar</div>
+      <div class="sb-step-text">O Power Query abre o JSON com os dados. Clique em <b>"Para a Tabela"</b> → <b>OK</b></div>
     </div>
     <div class="sb-step">
       <div class="sb-num">4</div>
-      <div class="sb-step-text">Clique <b>OK</b> → Power Query abre o JSON → clique <b>"Para a Tabela"</b> → expandir colunas → <b>Carregar</b></div>
+      <div class="sb-step-text">Clique no ícone <b>⤢</b> no cabeçalho da coluna → selecione todas as colunas → <b>OK</b> → <b>Carregar</b></div>
     </div>
 
     <div class="sb-footer">
@@ -593,6 +573,7 @@
       banco online · Supabase · South America (São Paulo) · sem instalação
     </div>
   </div>
+
 
   <!-- ── ARQUIVOS INDIVIDUAIS ── -->
   <div class="section-header" style="margin-top:24px;">
