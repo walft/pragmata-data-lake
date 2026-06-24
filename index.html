@@ -368,6 +368,71 @@
     }
     .social-link svg { flex-shrink: 0; }
 
+
+    /* ── SUPABASE CARD ── */
+    .supabase-panel {
+      background: rgba(183,148,244,.05);
+      border: 1px solid rgba(183,148,244,.25);
+      border-top: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 16px;
+      display: none;
+    }
+    .supabase-panel.open { display: block; }
+
+    .sb-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 16px; }
+    .sb-grid-full { margin-bottom: 10px; }
+
+    .sb-label {
+      font-family: var(--mono); font-size: 10px;
+      text-transform: uppercase; letter-spacing: .12em;
+      color: var(--muted); margin-bottom: 5px;
+    }
+    .sb-field {
+      display: flex; align-items: center; gap: 8px;
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 7px; padding: 9px 12px;
+    }
+    .sb-field code {
+      font-family: var(--mono); font-size: 12px;
+      color: var(--accent2); flex: 1; word-break: break-all;
+    }
+    .sb-field.senha { border-color: rgba(183,148,244,.3); background: rgba(183,148,244,.04); }
+    .sb-field.senha code { color: var(--purple, #b794f4); }
+
+    .sb-copy {
+      background: rgba(57,168,224,.1); border: 1px solid rgba(57,168,224,.3);
+      color: var(--accent2); font-family: var(--mono); font-size: 10px;
+      padding: 3px 8px; border-radius: 5px; cursor: pointer; white-space: nowrap; flex-shrink: 0;
+      transition: all .15s;
+    }
+    .sb-copy:hover { background: rgba(57,168,224,.2); }
+    .sb-copy.ok { background: rgba(0,184,148,.15); border-color: rgba(0,184,148,.3); color: var(--green); }
+
+    .sb-divider { height: 1px; background: var(--border); margin: 16px 0; }
+
+    .sb-steps-title {
+      font-family: var(--mono); font-size: 10px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: .1em;
+      color: var(--muted); margin-bottom: 12px;
+    }
+    .sb-step { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; }
+    .sb-step:last-child { margin-bottom: 0; }
+    .sb-num {
+      width: 20px; height: 20px; border-radius: 50%; flex-shrink: 0;
+      background: rgba(183,148,244,.15); border: 1px solid rgba(183,148,244,.3);
+      color: #b794f4; font-family: var(--mono); font-size: 10px; font-weight: 600;
+      display: flex; align-items: center; justify-content: center; margin-top: 1px;
+    }
+    .sb-step-text { font-size: 13px; color: var(--muted); line-height: 1.5; }
+    .sb-step-text b { color: var(--text); font-weight: 500; }
+    .sb-step-text code { font-family: var(--mono); font-size: 11px; color: var(--accent2); background: rgba(57,168,224,.08); padding: 1px 5px; border-radius: 4px; }
+
+    .sb-footer { margin-top: 14px; display: flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; color: var(--muted); }
+    .sb-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; flex-shrink: 0; }
+
     .message-card { text-align: center; padding: 60px 20px; color: var(--muted); font-size: 14px; }
 
     @media (max-width: 700px) {
@@ -458,6 +523,80 @@
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         Download
       </a>
+    </div>
+  </div>
+
+  <!-- Supabase SQL 2021 -->
+  <div class="consolidated-btn" id="btn-sb-cons" onclick="togglePanel('sb-cons')" style="--tc:#b794f4;">
+    <div class="consolidated-icon">🗄️</div>
+    <div class="consolidated-info">
+      <div class="consolidated-name">vendas_2021 <span class="type-badge" style="--tc:#b794f4;--tbg:rgba(183,148,244,.08)">PostgreSQL</span></div>
+      <div class="consolidated-desc">Banco de dados online · Supabase · Conectar via Power BI ou Excel</div>
+    </div>
+    <span class="consolidated-badge" style="background:rgba(183,148,244,.12);color:#b794f4;border-color:rgba(183,148,244,.3)">850 registros</span>
+    <span class="consolidated-chevron">▼</span>
+  </div>
+  <div class="supabase-panel" id="panel-sb-cons">
+
+    <!-- Host -->
+    <div class="sb-grid-full">
+      <div class="sb-label">Host</div>
+      <div class="sb-field">
+        <code id="sb-host">db.mjzckujjoqnfljdlkhoi.supabase.co</code>
+        <button class="sb-copy" onclick="sbCopy('sb-host',this)">copiar</button>
+      </div>
+    </div>
+
+    <!-- Grid -->
+    <div class="sb-grid">
+      <div>
+        <div class="sb-label">Port</div>
+        <div class="sb-field"><code id="sb-port">5432</code><button class="sb-copy" onclick="sbCopy('sb-port',this)">copiar</button></div>
+      </div>
+      <div>
+        <div class="sb-label">Database</div>
+        <div class="sb-field"><code id="sb-db">postgres</code><button class="sb-copy" onclick="sbCopy('sb-db',this)">copiar</button></div>
+      </div>
+      <div>
+        <div class="sb-label">Usuário</div>
+        <div class="sb-field"><code id="sb-user">postgres</code><button class="sb-copy" onclick="sbCopy('sb-user',this)">copiar</button></div>
+      </div>
+      <div>
+        <div class="sb-label">Tabela</div>
+        <div class="sb-field"><code id="sb-table">vendas_2021</code><button class="sb-copy" onclick="sbCopy('sb-table',this)">copiar</button></div>
+      </div>
+    </div>
+
+    <!-- Senha -->
+    <div class="sb-grid-full">
+      <div class="sb-label">Senha (informada pelo professor em aula)</div>
+      <div class="sb-field senha"><code>••••••••••••</code></div>
+    </div>
+
+    <div class="sb-divider"></div>
+
+    <!-- Passos -->
+    <div class="sb-steps-title">Como conectar no Power BI</div>
+    <div class="sb-step">
+      <div class="sb-num">1</div>
+      <div class="sb-step-text"><b>Obter Dados</b> → <b>Banco de Dados PostgreSQL</b></div>
+    </div>
+    <div class="sb-step">
+      <div class="sb-num">2</div>
+      <div class="sb-step-text">Cole o <b>Host</b> e a <b>Port</b> <code>5432</code> nos campos indicados</div>
+    </div>
+    <div class="sb-step">
+      <div class="sb-num">3</div>
+      <div class="sb-step-text">Usuário: <code>postgres</code> · Senha: fornecida pelo professor</div>
+    </div>
+    <div class="sb-step">
+      <div class="sb-num">4</div>
+      <div class="sb-step-text">Selecione a tabela <code>vendas_2021</code> e clique <b>Carregar</b></div>
+    </div>
+
+    <div class="sb-footer">
+      <div class="sb-dot"></div>
+      banco online · Supabase · South America (São Paulo)
     </div>
   </div>
 
@@ -562,6 +701,16 @@
     var isOpen = btn.classList.contains('open');
     btn.classList.toggle('open', !isOpen);
     panel.classList.toggle('open', !isOpen);
+  }
+
+  function sbCopy(id, btn) {
+    var text = document.getElementById(id).textContent;
+    navigator.clipboard.writeText(text).then(function() {
+      var orig = btn.textContent;
+      btn.textContent = '✓ ok';
+      btn.classList.add('ok');
+      setTimeout(function() { btn.textContent = orig; btn.classList.remove('ok'); }, 2000);
+    }).catch(function() { prompt('Copie:', text); });
   }
 
   function copyPanelUrl(urlId, btn) {
